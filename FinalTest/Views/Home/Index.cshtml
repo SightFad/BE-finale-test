@@ -1,0 +1,119 @@
+﻿@model FinalTest.Models.ViewModel.HomeProductVM
+
+@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+    <link rel="stylesheet" type="text/css" href="~/Content/myStyle/CustomerHome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+}
+<head>
+</head>
+<body>
+    <header>
+        <div class="discount">
+            <div>Freeship đơn từ 45K, giảm nhiều hơn cùng</div> <div><img src="~/Images/freeship.png" /></div>
+        </div>
+        <div class="container">
+            <div class="innercontainer">
+                <img id="logo-img" src="~/Images/logo.jpg" />
+                <div class="rightSide">
+                    <div class="search-section">
+                        @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+                        {
+                            @Html.TextBoxFor(m => m.SearchTerm, new
+                            {
+                            @class = "search-input",
+                            placeholder = "Giao nhanh 2h"
+                            })
+                            <button type="submit" id="search-btn">Tìm kiếm</button>
+                        }
+
+                        <div class="home">
+                            <div><a href="#"><i class="fas fa-home"></i> Trang chủ</a></div>
+                            <div><a href="@Url.Action("Login", "Account", null)"> <i class="far fa-smile-wink"></i> Tài khoản</a></div>
+                            <div><a href="#"><span class="vl"></span></a></div>
+                            <div><a href="@Url.Action("Login", "Account", null)"><b><i class="fas fa-shopping-cart" style="color:deepskyblue"></i></b></a></div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-main">
+                            <div class="category">
+                                <a href="#">điện gia dụng</a>
+                                <a href="#">xe cộ</a>
+                                <a href="#">mẹ &amp; bé</a>
+                                <a href="#">khỏe đẹp</a>
+                                <a href="#">nhà cửa</a>
+                                <a href="#">sách</a>
+                                <a href="#">thể thao</a>
+                            </div>
+                            <div class="destination">
+                                <i class="fas fa-map-marker-alt"></i> Giao đến: <a href="#">Q. 1, P.Bến Nghé, Hồ Chí Minh</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="container">
+            <div class="innercontainer">
+                <a href="#">
+                    <div><span style="color:midnightblue; font-weight: bold; padding-right: 15px;">Cam kết</span> <img src="~/Images/check.png"> 100% hàng thật</div>
+                </a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/ship.png" /> Freeship mọi đơn</div></a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/moneysave.png" /> Hoàn 200% nếu hàng giả</div></a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/refund.png" /> 30 ngày đổi trả</div></a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/fastship.png" /> Giao hàng nhanh 2h</div></a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/price.png" /> Giá siêu rẻ</div></a>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <h4>Trang chủ > Đơn hàng của tôi</h4>
+        <div class="inner-main-container">
+            <div class="navigation">
+                <div class="profile">
+                    <img src="~/Images/avatar.png" />
+                    <div class="username">
+                        <div>Tài khoản của</div>
+                        <div><span style="font-size: 1rem; color: black;">User</span></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Thông tin tài khoản</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Thông báo của tôi</div></a>
+                    <a href="@Url.Action("MyOrder", "Order", null)" class="link"><div class="nav-btn">Quản lý đơn hàng của tôi</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Quản lý đổi trả</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Sổ địa chỉ</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Thông tin thanh toán</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Đánh giá sản phẩm</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Sản phẩm bạn đã xem</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Sản phẩm yêu thích</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Nhận xét của tôi</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Chia sẻ có lời</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Hợp đồng bảo hiểm</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Mã giảm giá</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Astra của bạn</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Quản lý Tiki Xu của tôi</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">BookCare của tôi</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Hỗ trợ khách hàng</div></a>
+                </div>
+            </div>
+            <div class="rightSide">
+                @* PHẦN SẢN PHẨM NỔI BẬT *@
+                @Html.Partial("PVFeatureProduct", Model)
+
+                @* PHẦN SẢN PHẨM MỚI *@
+                @Html.Partial("PVNewProduct", Model)
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+

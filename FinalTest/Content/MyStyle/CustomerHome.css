@@ -1,0 +1,499 @@
+﻿html {
+    width: 1526px;
+    background-color: rgb(245, 245, 250);
+    font-size: 17px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    display: block;
+}
+
+.discount {
+    display: flex;
+    background-color: #e1fceb;
+    font-weight: 600;
+    font-size: 12px;
+    color: green;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+    .discount p {
+        padding-left: 4px;
+    }
+
+    .discount img {
+        padding-left: 4px;
+        padding-top: 1%;
+        width: 70px;
+    }
+
+.container {
+    font-size: 0.9rem;
+    background-color: white;
+    padding: 8px 2%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.innercontainer {
+    display: flex;
+    padding: 2px 10px;
+    gap: 1%;
+}
+
+    .innercontainer img {
+        width: 20px;
+        vertical-align: middle;
+        margin-bottom: 0.1rem;
+    }
+
+    .innercontainer a {
+        text-decoration: none;
+        color: black;
+    }
+
+.rightSide {
+    display: block;
+    width: 85%;
+}
+
+.search-section {
+    display: flex;
+    height: 50%;
+}
+
+    .search-section form{
+        width: 100%;
+        display: flex;
+    }
+
+    .search-section input{
+        width: 700px;
+    }
+
+form{
+    width: 90%;
+}
+
+#search-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+}
+
+#search-btn {
+    background-color: white;
+    color: dodgerblue;
+    border: 1px solid gray;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bolder;
+}
+
+.logo {
+    position: relative;
+    width: max-content;
+}
+
+#logo-img {
+    width: 7%;
+    align-items: center;
+    padding-right: 30px;
+}
+
+hr {
+    width: 1526px;
+    margin: 0.1rem;
+}
+
+h4 {
+    color: gray;
+    font-weight: lighter;
+}
+
+.home {
+    width: 35%;
+    display: flex;
+    padding-left: 3%;
+    align-items: center;
+}
+
+.home div{
+    border-radius: 40%;
+}
+
+    .home div a{
+        color: gray;
+        text-decoration: none;
+        padding: 0px;
+        margin: 0 10px;
+        justify-content: center;
+        display: inline-block;
+        font-size: 1.06rem;
+    }
+
+        .home div:hover{
+            background-color: lightgray;
+        }
+
+.vl {
+    border-left: 1px solid gray;
+    height: 1rem;
+    opacity: 50%;
+}
+
+.bottom {
+    justify-content: space-between;
+    margin: auto 0;
+    height: 50%;
+}
+
+.bottom-main {
+    margin-top: 1.2rem;
+    display: flex;
+}
+
+.category {
+    width: 71%;
+    display: flex;
+    margin: auto 0;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+    .category a {
+        text-decoration: none;
+        color: gray;
+    }
+
+.destination {
+    padding-left: 3%;
+    float: right;
+    color: gray;
+}
+
+    .destination a {
+        color: black;
+        text-decoration: underline;
+    }
+
+.navigation {
+    width: 20%;
+    display: block;
+    align-items: center;
+    color: gray;
+}
+
+    .navigation div {
+        padding: 7px 15px;
+        vertical-align: middle;
+    }
+
+.nav-btn {
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin: auto;
+    text-decoration: none;
+}
+
+    .nav-btn:hover {
+        color: black;
+        background-color: #e7e0e0;
+    }
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.profile {
+    width: 200px;
+    display: flex;
+    padding: 0 5px;
+    font-size: 0.8rem;
+}
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 8px;
+    }
+
+.username {
+    width: 100%;
+}
+
+    .username div {
+        padding-left: 5px;
+    }
+
+.main-container {
+    margin: auto 10%;
+    display: block;
+}
+
+.inner-main-container {
+    display: flex;
+}
+
+.main-container h4 {
+    padding-left: 15px;
+    width: 100%;
+}
+
+.cart-section {
+    width: 100%;
+    position: relative;
+}
+
+    .cart-section h3 {
+        padding-top: 32px;
+        font-weight: lighter;
+    }
+
+    .cart-section .line {
+        width: 93.7%;
+        height: 2px;
+        background-color: blue;
+        position: absolute;
+    }
+
+.cart-process {
+    background-color: white;
+    width: 90%;
+    color: gray;
+    display: flex;
+    padding: 10px 18px;
+}
+
+.tab_btn {
+    width: 16.667%;
+    text-align: center;
+    margin: auto 0;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+    .tab_btn.active {
+        color: blue;
+    }
+
+button {
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+.content_box {
+    padding: 20px;
+    background-color: white;
+    width: 89.5%;
+}
+
+    .content_box .content {
+        display: none;
+        background-color: white;
+    }
+
+        .content_box .content.active {
+            display: block;
+        }
+
+        .content_box .content h2 {
+            margin-bottom: 10px;
+        }
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.details_container{
+    position: absolute;
+    margin: auto 0;
+}
+
+#banner {
+    background-image: url("../Content/images/banner.jfif");
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    text-align: center;
+    color: black;
+}
+
+    .banner-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .banner-content p {
+        font-size: 1.8rem;
+    }
+
+.featureProd {
+    text-align: left;
+}
+
+    .featureProd h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+.feature-container {
+    display: flex;
+    overflow-x: auto; /*cho phép cuộn ngang*/
+    scroll-snap-type: x mandatory;
+}
+
+.prodContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fproduct-item { /*hiển thị dạng slider*/
+    width: 200px; /*điều chỉnh theo độ rộng màn hình*/
+    max-height: 400px;
+    margin: 10px;
+    gap: 5px; /*khoảng cách giữa 2 item*/
+    flex: 0 0 auto; /*để các sản phẩm không co giãn*/
+    scroll-snap-align: start; /*để các sản phẩm dừng lại ở đầu khi cuộn*/
+}
+
+    .fproduct-item img {
+        padding: 5px;
+        max-height: 160px;
+        vertical-align: central;
+        background-color: transparent;
+    }
+
+.product-item h3 {
+    font-size: 14px;
+    color: black;
+    margin: 10px 0px;
+}
+
+.product-item img {
+    max-width: 150px;
+    height: auto;
+}
+
+.prodPrice {
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+}
+
+.prodName {
+    color: black;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+}
+
+.prodCate {
+    color: black;
+    padding: 0px 5px 0px 5px;
+}
+
+.prodSale {
+    font-size: small;
+    color: dimgray;
+    padding: 0px 5px 0px 5px;
+}
+
+.searchProd {
+    text-align: center;
+}
+
+.product-list {
+    text-align: center;
+}
+
+    .product-list h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+.listProduct {
+    text-align: left;
+}
+
+.list-container {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.lproduct-item {
+    max-height: 500px;
+}
+
+    .lproduct-item img {
+        /*padding: 5px;*/
+        max-height: 120px; /* điều chỉnh theo độ rộng màn hình*/
+    }
+
+.detailproduct-item {
+    width: 150px; /* điều chỉnh theo độ màn hình */
+    max-height: 400px;
+    margin: 10px;
+    gap: 5px; /*khoảng cách giữa 2 item*/
+    flex: 0 0 auto; /* để các sản phẩm không co giãn*/
+    scroll-snap-align: start; /*để các sản phẩm dừng lại ở đầu khi cuộn*/
+}
+
+    .detailproduct-item img {
+        /*padding : 5px; */
+        max-height: 100px; /* điều chỉnh theo độ rộng màn hình */
+    }
+
+/*các thuộc tính chung của FEATURE và NEW sản phẩm*/
+
+.fproduct-item, .lproduct-item, .detailproduct-item {
+    border: 1px groove #808080;
+    border-radius: 10px;
+}
+
+.rightSide h2, .rightSide h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: brown;
+    text-align: center;
+}
+
+.fproduct-item img{
+    width: 80%;
+    max-height: 90%;
+}
+
+

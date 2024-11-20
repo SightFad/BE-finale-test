@@ -1,0 +1,179 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+    <link rel="stylesheet" type="text/css" href="~/Content/myStyle/CustomerHome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+}
+
+<body>
+    <header>
+        <div class="discount">
+            <div>Freeship đơn từ 45K, giảm nhiều hơn cùng</div> <div><img src="~/Images/freeship.png" /></div>
+        </div>
+        <div class="container">
+            <div class="innercontainer">
+                <img id="logo-img" src="~/Images/logo.jpg" />
+                <div class="rightSide">
+                    <div class="search-section">
+                        @using (Html.BeginForm("MyOrder", "Order", FormMethod.Get))
+                        {
+                            <input type="text" placeholder="Giao nhanh 2h" id="search-input" />
+                            <button type="submit" id="search-btn">Tìm kiếm</button>
+                        }
+
+                        <div class="home">
+                            <div><a href="#"><i class="fas fa-home"></i> Trang chủ</a></div>
+                            <div><a href="#"> <i class="far fa-smile-wink"></i> Tài khoản</a></div>
+                            <div><a href="#"><span class="vl"></span></a></div>
+                            <div><a href="#"><b><i class="fas fa-shopping-cart" style="color:deepskyblue"></i></b></a></div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-main">
+                            <div class="category">
+                                <a href="#">điện gia dụng</a>
+                                <a href="#">xe cộ</a>
+                                <a href="#">mẹ &nbsp; bé</a>
+                                <a href="#">khỏe đẹp</a>
+                                <a href="#">nhà cửa</a>
+                                <a href="#">sách</a>
+                                <a href="#">thể thao</a>
+                            </div>
+                            <div class="destination">
+                                <i class="fas fa-map-marker-alt"></i> Giao đến: <a href="#">Q. 1, P.Bến Nghé, Hồ Chí Minh</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="container">
+            <div class="innercontainer">
+                <a href="#">
+                    <div><span style="color:midnightblue; font-weight: bold; padding-right: 15px;">Cam kết</span> <img src="~/Images/check.png"> 100% hàng thật</div>
+                </a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/ship.png" /> Freeship mọi đơn</div></a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/moneysave.png" /> Hoàn 200% nếu hàng giả</div></a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/refund.png" /> 30 ngày đổi trả</div></a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/fastship.png" /> Giao hàng nhanh 2h</div></a>
+                <div class="vl"></div>
+                <a href="#"><div><img src="~/Images/price.png" /> Giá siêu rẻ</div></a>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <h4>Trang chủ > Đơn hàng của tôi</h4>
+        <div class="inner-main-container">
+            <div class="navigation">
+                <div class="profile">
+                    <img src="~/Images/avatar.png" />
+                    <div class="username">
+                        <div>Tài khoản của</div>
+                        <div><span style="font-size: 1rem; color: black;">Lê Phan</span></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Thông tin tài khoản</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Thông báo của tôi</div></a>
+                    <a href="@Url.Action("MyOrder", "Order", null)" class="link"><div class="nav-btn">Quản lý đơn hàng của tôi</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Quản lý đổi trả</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Sổ địa chỉ</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Thông tin thanh toán</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Đánh giá sản phẩm</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Sản phẩm bạn đã xem</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Sản phẩm yêu thích</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Nhận xét của tôi</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Chia sẻ có lời</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Hợp đồng bảo hiểm</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Mã giảm giá</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Astra của bạn</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Quản lý Tiki Xu của tôi</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">BookCare của tôi</div></a>
+                    <a href="@Url.Action("Index", "Home", null)" class="link"><div class="nav-btn">Hỗ trợ khách hàng</div></a>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="cart-section">
+                    <h3>Đơn hàng của tôi</h3>
+                    <div class="cart-process">
+                        <button class="tab_btn">Tất cả đơn</button>
+                        <button class="tab_btn">Chờ thanh toán</button>
+                        <button class="tab_btn">Đang xử lý</button>
+                        <button class="tab_btn">Đang vận chuyển</button>
+                        <button class="tab_btn">Đã giao</button>
+                        <button class="tab_btn">Đã hủy</button>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <br />
+                <div class="search-container" style="width:98%;">
+                    <input type="text" placeholder="Tìm đơn hàng theo Mã đơn hàng, Nhà bán hoặc Tên sản phẩm" id="search-input" />
+                    <button id="search-btn">Tìm đơn hàng</button>
+                </div>
+                <br />
+                <div class="content_box">
+                    <div class="content">
+               
+                    </div>
+                    <div class="content">
+                        <h2>Chờ thanh toán</h2>
+                        <p>
+                            Làng Nành lợn nái năm nay lọt lòng. Lúa non nắng lửa nản lòng. Lão nông nức nở lấy nong nia về.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h2>Đang xử lý</h2>
+                        <p>
+                            Nếu nói lầm lẫn lần này thì nói lại. Nói lầm lẫn lần nữa thì lại nói lại. Nói cho đến lúc luôn luôn lưu loát hết lầm lẫn mới thôi.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h2>Đang vận chuyển</h2>
+                        <p>
+                            Lính lê leo lên lầu lấy lưỡi lê, lấy lộn lại leo lên lấy lại.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h2>Đã giao</h2>
+                        <p>
+                            Năm nay lũ lớn liên tiếp về làm năng suất lúa nếp của bà con nông dân thấp lắm.
+                        </p>
+                    </div>
+                    <div class="content">
+                        <h2>Đã hủy</h2>
+                        <p>
+                            Con cá rô rục rịch trong rổ réo róc rách/Con cá rô trong rổ nhảy rồ rồ.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const tabs = document.querySelectorAll('.tab_btn');
+        const navs = document.querySelectorAll('.nav-btn');
+        const all_content = document.querySelectorAll('.content');
+        const prod_content = document.querySelectorAll('.ProdContent')
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', (e) => {
+                tabs.forEach(tab => { tab.classList.remove('active') });
+                tab.classList.add('active');
+
+                var line = document.querySelector('.line');
+                line.style.width = e.target.offsetWidth + "px";
+                line.style.left = e.target.offsetLeft + "px";
+
+                all_content.forEach(content => { content.classList.remove('active') })
+                all_content[index].classList.add('active');
+            })
+        })
+    </script>
+</body>
+
+
